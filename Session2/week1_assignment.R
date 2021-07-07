@@ -10,5 +10,6 @@
 
 # Q4. Plot ESR1 on the X axis and ERBB2 on the y axis, colour the dots by ER status
 
-
+# Q5. Filter the dataset to include only those patients who have metastasis as the outcome,
+#     and assign this filtered dataset to a new variable
 
