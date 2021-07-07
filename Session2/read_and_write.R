@@ -17,6 +17,8 @@ dim(populations)
 str(populations)
 #read excel
 install.packages("readxl")
+#or
+#install.packages("openxlsx")
 library(readxl)
 populations2<-read_excel("data/selection.xls")
 str(populations2)
