@@ -22,6 +22,7 @@ This course is aimed at those with minimal or no programming experience to creat
 5. Session 5
     - Data visualisation - subplots and statistics on plots
     - Heatmaps - microRNA data
+    - NEW - participants' data
 
 ## RESOURCES
 - [R Graph Gallery](https://www.r-graph-gallery.com/)
