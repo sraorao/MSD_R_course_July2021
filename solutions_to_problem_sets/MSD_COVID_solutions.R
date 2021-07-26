@@ -1,6 +1,3 @@
-###R for biologists
-##Irina & Rao, 28/04/2021
-
 ##Breakout tasks - MSD COVID dataset
 #1) Import the corresponding sheet from Excel file provided (use readxl)
 #Group 1 - IFNy; Group 2 - IL-1; Group 3 - IL-2; Group 4 - IL-10
