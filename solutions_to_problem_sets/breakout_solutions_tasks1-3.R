@@ -22,8 +22,20 @@ summarise(mydata1, median(Subtraction))
 #Note the difference?
 
 #4) Find the maximum and minimum values of Subtract in each group (group by randomisation)
+#combining 3 and 4 tasks together and writing the output in the data.frame
+mydata %>%
+group_by(Randomised_to) %>%
+summarise(mean_IL1 = mean(Subtraction), median_IL1 = median(Subtraction), sd_IL1 = sd(Subtraction), max_IL1 = max(Subtraction), min_IL1 = min(Subtraction)) -> IL1_summary
 
 #5) Remove the rows, which have negative values in Subtract
+mydata %>%
+filter(Subtraction >= 0) -> IL1_positive
 
 #6) Save the table as csv comma-separated file containing columns 1, 5 and 6 only (without negative values - see #5)
 #Hint: try to find 2 solutions - base R and dplyr option
+IL1_positive %>%
+select(c("Assay", "Randomised_to", "Subtraction")) -> IL1_selected
+#or with base R
+IL1_selected <- IL1_positive[,c(1,5,6]
+#save as csv (comma-separated by default)
+write_csv(IL1_selected, "IL1_analysed.csv")
