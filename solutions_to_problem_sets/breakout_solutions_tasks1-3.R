@@ -36,6 +36,6 @@ filter(Subtraction >= 0) -> IL1_positive
 IL1_positive %>%
 select(c("Assay", "Randomised_to", "Subtraction")) -> IL1_selected
 #or with base R
-IL1_selected <- IL1_positive[,c(1,5,6]
+IL1_selected <- IL1_positive[,c(1,5,6)]
 #save as csv (comma-separated by default)
 write_csv(IL1_selected, "IL1_analysed.csv")
